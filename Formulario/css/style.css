@@ -1,0 +1,806 @@
+
+/*
+Paleta de colores
+#A60815, #BF0F30, #F2F2F2,#402319,#D9ADA9,#4b4949
+*/
+ 
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: "Source Sans Pro", sans-serif;;
+    height: 100vh;
+}
+ 
+ 
+.container_header{
+    width: 100%;
+    height: 35%;
+    background-color: #402319;
+    background-image: linear-gradient(10deg, #4023194f, #a6081544,#4b494991), url(../assets/faith-g53171e84d_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+ 
+.menu
+{
+    text-align: right;
+    margin-right: 2%;
+ 
+}
+ 
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu > ul > li {
+    display: inline;
+}
+
+.menu > ul > li > a{
+    display: inline-block;
+    padding: .5% 2%;
+    background-color:#BF0F30 ;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 22px;
+    border: 1px solid #BF0F30;
+}
+ 
+.menu > ul > li > a:hover{
+    background-color: #a60815;
+    border: 1px solid;
+    transition: 0.2s ease-in-out;
+}
+ 
+hr{
+    border-color: #402319;
+}
+ 
+
+ 
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 1%;
+    color: aliceblue;
+}
+ 
+.fm_contact{
+    width: 60%;
+    height: auto;
+    margin: 2% auto;
+    border: 3px solid #402319;
+    border-radius: 2% 1%;
+    text-align: center;
+    hr{
+        margin-bottom: 3%;
+    }
+    .title_form{
+        margin: 2% 0;
+        text-align: center;
+        color: #a60815;
+        font-size: 2rem;
+    }
+}
+ 
+.fm_contact > input, label, button{
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size:  22px;
+}
+ 
+.fm_contact > input , .msn{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #402319;
+    outline: none;
+    background-color: antiquewhite;
+}
+ 
+.msn{
+    width: 80%;
+}
+ 
+.fm_contact > label{
+    text-align: left;
+    padding: 5px;
+}
+ 
+input:focus, .msn:focus{
+    border-bottom: none;
+    border-right:  2px solid #402319;
+    background-color: antiquewhite;
+}
+ 
+.btn-enviar,
+.btn_Registrar,
+.btn_Cancelar{
+    width: 30%;
+    margin-top: 2%;
+    padding: 10px 20px;
+    background-color: #a60815;
+    border-radius: 10px;
+    border: solid #402319  3px;
+    color: aliceblue;
+}
+ 
+.btn-enviar:hover,
+.btnRegistrar:hover,
+.btn_Cancelar:hover{
+    background-color: #a60815;
+    text-decoration: underline;
+    cursor: pointer;
+}
+ 
+.btn-accesibility{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+ 
+.btn-accesibility button{
+    background-color: #4b4949;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+ 
+.btn-accesibility button{
+    background-color: black !important;
+}
+ 
+body.contraste_alto {
+    background-color: black;
+    color: yellow !important;
+}
+ 
+body.contraste_alto a{
+    color: cyan !important;
+}
+ 
+.modo-contraste{
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: white !important;
+}
+ 
+.footer{
+    width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background-image: linear-gradient(10deg, #402319, #bf0f30, #a60815 60%);
+  padding: 2%;
+}
+ 
+.title_about {
+    color: #f2f2f2;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.my_nets,
+.map {
+  width: 30%;
+  height: auto;
+}
+ 
+.foot .social_net {
+  list-style: none;
+}
+
+.title_nets {
+  color: #f2f2f2;
+  margin-bottom: 3%;
+  padding: 1%;
+}
+.social_net > li {
+  padding: 1%;
+}
+.nets {
+  width: 8%;
+}
+
+.foot {
+    display: inline;
+    margin: 3%;
+    text-align: center;
+  }
+  .copy {
+    width: 30%;
+    height: auto;
+    color: #f2f2f2;
+    line-height: 40px;
+  }
+ 
+.title_ubi {
+    color: #f2f2f2;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+  .foot > iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+  .credits {
+    width: 100%;
+    padding: 2%;
+    background-color: #402319;
+    text-align: right;
+    color: #f2f2f2;
+  }
+  .credits > a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  .card {
+    width: 60%;
+    margin: 5% auto;
+    border: 3px solid #402319;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .card strong{
+    margin-right: auto;
+    padding-left: 1rem;
+  }
+
+  .title-card {
+    font-size: 1.8rem;
+    padding: 2%;
+  }
+
+  .data-card,
+  .text-mail,
+  .text-msn,
+  .text-telefono {
+    font-size: 1.25rem;
+    color: #402319;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    gap: 8px;
+    padding-right: 1rem;
+  }
+   
+  .btnRegistrar:hover,
+  .btnCancelar:hover {
+    background: #bf0f30;
+    text-decoration: underline;
+  }
+  .botones-accesibilidad {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    transform: translateY(-50%);
+  }
+   
+  .botones-accesibilidad button {
+    background-color: #4b4949;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+   
+  .botones-accesibilidad button:hover {
+    background-color: #bf0f30;
+  }
+
+  .modo-contraste {
+      filter: invert(1) hue-rotate(180deg);
+      background-color: black !important;
+      color: cyan !important;
+  }
+   
+   
+  .boton-accesibilidad {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+   
+  .boton-accesibilidad button {
+      padding: 1.5%;
+      font-size: 2rem;
+      cursor: pointer;
+      border: none;
+      background-color: #4b4949;
+      color: white;
+      border-radius: 5px;
+  }
+   
+  .boton-accesibilidad button:hover {
+      background-color: #bf0f30;
+  }
+   
+   
+  .alerta {
+    width: 30%;
+    height: auto;
+    background: #bf0f30;
+    position: fixed;
+    top: calc(100vh - 65%);
+    left: calc(100vw - 65%);
+    text-align: center;
+    border: 2px solid #402319;
+    padding: 5px;
+    border-radius: 12px;
+  }
+
+  .textAlerta {
+    width: 100%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  .btnAlerta {
+    width: 40%;
+    height: auto;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    background: #402319;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #f2f2f2;
+    padding: 3%;
+    cursor: pointer;
+    border: 1px solid #402319;
+    text-align: center;
+
+  }
+
+  .btnAlerta:hover{
+    background-color: #4d291e;
+  }
+  
+  .btnAlerta:focus{
+    background-color: #4d291e;
+    border: 1px solid white;
+    text-decoration: underline;
+  }
+   
+
+  .main-content, .portfolio-content, .services-content {
+    padding: 2rem;
+    background-color: #F2F2F2;
+  }
+  
+  .portfolio-section header h2, .portfolio-section .portfolio-article h3, .portfolio-section .portfolio-article p, .portfolio-aside header h2, .portfolio-aside p{
+    text-align: center;
+  }
+
+  .main-article, .main-section, .main-aside, .services-section, .services-aside, .portfolio-section, .portfolio-article, .portfolio-aside {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #D9ADA9;
+    border-radius: 5px;
+  }
+  
+  .portfolio-article p, .portfolio-aside p, .service-article p, .portfolio-article h3, .service-article h3{
+    font-size: 1.2rem;
+  }
+  .article-header, .section-header, .news-header, .aside-header, .services-section header, .services-aside header, .portfolio-section header, .portfolio-aside header {
+    border-bottom: 2px solid #BF0F30;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title, .article-title, .news-title, .aside-title, .services-section h2, .services-aside h2, .portfolio-section h2, .portfolio-aside h2  {
+    color: #A60815;
+    margin: 0;
+  }
+  
+  .section-text {
+    margin-bottom: 1rem;
+  }
+  
+  .faculty-list {
+    list-style: disc;
+    margin-left: 2rem;
+    padding: 0;
+  }
+  
+  .news-article, .service-article{
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    border: 1px solid #D9ADA9;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  
+  .service-article h3, .portfolio-article h3 {
+    color: #BF0F30;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .service-article p {
+    margin: 0;
+  }
+  
+  .aside-list, .aside-nav ul, .portfolio-aside nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+
+
+  .aside-nav li, .portfolio-aside nav li, .faculty-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .aside-nav a, .portfolio-aside nav a {
+    color: #BF0F30;
+  }
+  
+  .aside-nav a:hover, .portfolio-aside nav a:hover {
+    color: #A60815;
+  }
+  
+  .portfolio-article p, .portfolio-aside p {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .portfolio-article figure {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .portfolio-article img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 3px;
+  }
+  
+  .portfolio-article figcaption {
+    font-size: 0.9rem;
+    color: #402319;
+    margin-top: 0.5rem;
+  }
+    
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .fm_contact {
+      width: 70%;
+      margin: 3% auto;
+    }
+
+    .title .h1{
+      padding: 0 1rem;
+    }
+
+    .title{
+      margin-top: 2%;
+    }
+    .nets {
+      width: 20%;
+    }
+
+    .copy{
+      line-height: 30px;
+    }
+
+    .footer h3{
+      margin-bottom: 5%;
+    }
+
+    .credits{
+      text-align: center;
+    }
+
+    .card{
+      width: 70%;
+    }
+
+    .btn-enviar{
+      width: 50%;
+      margin-bottom: 2%;
+    }
+
+    .alerta{
+      width: 50%;
+      top: calc(100vh - 55%);
+      left: calc(100vw - 75%);
+    }
+
+    .section-title, .article-title, .news-title, .aside-title, .services-section h2, .services-aside h2, .portfolio-section h2, .portfolio-aside h2{
+      text-align: center;
+    }
+
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    
+    .container_header{
+      height: 40%;
+    }
+
+    .title .h1{
+      padding: 0 1rem;
+    }
+
+    .menu{
+      padding-top: 1rem;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    .menu ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .menu > ul > li > a{
+      width: 12rem;
+    }
+
+    .fm_contact {
+      width: 90%;
+      margin: 5% auto;
+
+    }
+
+    .title{
+      margin-top: 6%;
+      font-size: 2.5rem;
+    }
+
+    .nets {
+      width: 15%;
+    }
+
+    .copy{
+      line-height: 30px;
+    }
+
+    .footer h3{
+      margin-bottom: 5%;
+    }
+
+    .credits{
+      text-align: center;
+    }
+
+    .card{
+      width: 90%;
+    }
+
+    .title-card{
+      font-size: 1.3rem;
+    }
+    .data-card,
+    .text-mail,
+    .text-msn,
+    .text-telefono{
+      font-size: 1rem;
+    }
+
+    .btn-enviar{
+      width: 50%;
+      margin-bottom: 2%;
+    }
+
+    .alerta{
+      width: 70%;
+      top: calc(100vh - 50%);
+      left: calc(100vw - 85%);
+    }
+    
+    .footer{
+      display: grid;
+    }
+
+    .copy{
+      padding-bottom: 1rem;
+      line-height: 25px;
+    }
+
+    .foot{
+      margin: 0;
+    }
+
+    .my_nets, .copy, .map{
+      width: 100%;
+    }
+
+    .my_nets .social_net{
+      display: flex;
+    }
+
+    .btn-accesibility{
+      right: 0px;
+    }
+
+    .aside-list, .aside-nav ul, .portfolio-aside nav ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 10px;
+    }
+
+    .section-title, .article-title, .news-title, .aside-title, .services-section h2, .services-aside h2, .portfolio-section h2, .portfolio-aside h2{
+      text-align: center;
+    }
+
+    .portfolio-article img{
+      max-width: 50%;
+    }
+  }
+
+
+  @media (max-width: 479px) {
+    
+    p{
+      text-align: center;
+    }
+
+    .title .h1{
+      padding: 0 1rem;
+    }
+    .container_header{
+      height: 40%;
+    }
+
+    .menu{
+      padding-top: 1rem;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    .menu ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .menu > ul > li > a{
+      width: 12rem;
+    }
+    
+    .fm_contact {
+      width: 90%;
+      margin: 5% auto;
+
+    }
+
+    .title{
+      margin-top: 10%;
+      font-size: 1.7rem;
+    }
+
+    .nets {
+      width: 15%;
+    }
+
+    .copy{
+      line-height: 30px;
+    }
+
+    .footer h3{
+      margin-bottom: 5%;
+    }
+
+    .credits{
+      text-align: center;
+    }
+
+    .card{
+      width: 90%;
+    }
+
+    .title-card{
+      font-size: 1.3rem;
+    }
+    .data-card,
+    .text-mail,
+    .text-msn,
+    .text-telefono{
+      font-size: 1rem;
+    }
+
+    .btn-enviar{
+      width: 70%;
+      margin-bottom: 2%;
+      padding: 7px 0;
+      font-size: 1rem;
+    }
+
+    .alerta{
+      width: 80%;
+      top: calc(100vh - 55%);
+      left: calc(100vw - 90%);
+    }
+    
+    .footer{
+      display: grid;
+    }
+
+    .copy{
+      padding-bottom: 1rem;
+      line-height: 25px;
+    }
+
+    .foot{
+      margin: 0;
+    }
+
+    .my_nets, .copy, .map{
+      width: 100%;
+    }
+
+    .my_nets .social_net{
+      display: flex;
+    }
+
+    .btn-accesibility{
+      right: 0px;
+    }
+
+    .aside-list, .aside-nav ul, .portfolio-aside nav ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu > ul > li > a{
+      width: 7rem;
+    }
+
+    .section-title, .article-title, .news-title, .aside-title, .services-section h2, .services-aside h2, .portfolio-section h2, .portfolio-aside h2{
+      text-align: center;
+    }
+
+    .portfolio-article img{
+      max-width: 100%;
+    }
+
+    .service-article h3{
+      text-align: center;
+    }
+  }
